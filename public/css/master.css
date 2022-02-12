@@ -1,0 +1,59 @@
+.color{
+    color: #700aa3 !important;
+}
+
+.article{
+    text-decoration: none;
+}
+
+.article-title{
+    color: rgba(0, 0, 0, 0.75);
+}
+
+.article-price{
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.info{
+    opacity: 0.7;
+}
+
+.btn-default{
+
+    background: #9200dd !important;
+    color: white;
+    margin-left: 50px;
+    margin-bottom: 20px;
+
+}
+
+.btn-default:hover{
+    background: #4a076c !important;
+    transition: linear all 0.2s;
+    color: white;
+}
+
+.card-default{
+
+    height: 400px !important;
+    margin-bottom: 15px !important;
+}
+
+.card-default:hover{
+    box-shadow: 3px 2px 3px 3px rgba(0, 0, 0, 0.05);
+    transform: translateY(2deg);
+    transition: all linear 0.3s;
+}
+
+.img-h{
+    height: 200px !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+}
+
+.card-article-price{
+    position: absolute;
+    left: 20px;
+    bottom: 50px !important;
+}
