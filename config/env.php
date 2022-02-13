@@ -1,9 +1,10 @@
 <?php
+
 /**
-*+=======================ATTENTION======================+
-*+<<<<<<<<<<<<<! Ne pas modifier les clés>>>>>>>>>>>>>>>>>
-*=======Valeurs de configuration globlale de l'App======= 
-*/
+ *+=======================ATTENTION======================+
+ *+<<<<<<<<<<<<<! Ne pas modifier les clés>>>>>>>>>>>>>>>>>
+ *=======Valeurs de configuration globlale de l'App======= 
+ */
 return [
 
 	"APP_NAME" 		=> "ecommerce",
@@ -19,11 +20,11 @@ return [
 	"DB_NAME"       => "ecommerce",
 	"DB_HOST"       => "localhost",
 	"DB_USER"       => "root",
-	"DB_PASS"       => "",
+	"DB_PASS"       => "root",
 
 	"FRAMEWORK"     => [
-		"CSS" =>["bootstrap"],
-		"JS"  =>["typescript"]
+		"CSS" => ["bootstrap"],
+		"JS"  => ["typescript"]
 	]
 
 ];

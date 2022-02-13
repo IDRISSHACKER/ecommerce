@@ -15,47 +15,41 @@ $title = "Ecommerce";
 
 $template = 1;
 
-if(!empty($_GET['view'])){
+if (!empty($_GET['view'])) {
 
 	$view = $_GET['view'];
-
-}else{
+} else {
 
 	$view = "home";
 }
 
 ob_start();
 
-if($view === "home"){
+if ($view === "home") {
 
-	require $ROOT."/resources/views/home.view.php";
+	require $ROOT . "/resources/views/home.view.php";
+} elseif ($view === "article") {
 
-}elseif($view === "article"){
-
-	require $ROOT."/resources/views/article.view.php";
-
-}elseif($view === "admin-upload"){
+	require $ROOT . "/resources/views/article.view.php";
+} elseif ($view === "admin-upload") {
 	ArticleController::uploadArticle();
-	require $ROOT."/resources/views/admin/upload.view.php";
-
-}elseif($view === "login"){
+	require $ROOT . "/resources/views/admin/upload.view.php";
+} elseif ($view === "login") {
 	UsersController::login();
-	require $ROOT."/resources/views/auth/login.view.php";
+	require $ROOT . "/resources/views/auth/login.view.php";
+} elseif ($view === "logOut") {
+	UsersController::signOut();
+} else {
 
-}else{
-
-	require $ROOT."/resources/views/home.view.php";
-
+	require $ROOT . "/resources/views/home.view.php";
 }
 
 $view = ob_get_clean();
 
-if($template === 1){
+if ($template === 1) {
 
-	require $ROOT."/resources/views/templates/master.view.php";
+	require $ROOT . "/resources/views/templates/master.view.php";
+} else {
 
-}else{
-
-	require $ROOT."/resources/views/templates/app.view.php";
+	require $ROOT . "/resources/views/templates/app.view.php";
 }
-

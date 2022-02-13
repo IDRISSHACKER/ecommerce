@@ -1,26 +1,34 @@
 <?php
+require "App.php";
 
-class Table{
+class Table
+{
 
-    private static function bdd(){
-        return new PDO("mysql:host=localhost;dbname=ecommerce","root","root");
-    }
+    public static function fetch($tatement, $one = false)
+    {
 
-    public static function fetch($tatement, $one = false){
+        $request = App::bdd()->bdd()->query($tatement);
 
-        $request = self::bdd()->query($tatement);
-
-        if($one){
+        if ($one) {
             return $request->fetch();
-        }else{
+        } else {
             return $request->fetchAll();
         }
     }
 
-    public static function save($tatement, $params=[]){
+    public static function save($tatement, $params = [])
+    {
 
-        $request = self::bdd()->prepare($tatement);
+        $request = App::bdd()->bdd()->prepare($tatement);
         return $request->execute($params);
     }
 
+    public static function prepare($tatement, $params = [], $one = true)
+    {
+
+        $request = App::bdd()->bdd()->prepare($tatement);
+        $request->execute($params);
+
+        return $one ? $request->fetch() : $request->fetchAll();
+    }
 }

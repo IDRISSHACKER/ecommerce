@@ -22,8 +22,8 @@
 
     background: #9200dd !important;
     color: white;
-    margin-left: 50px;
-    margin-bottom: 20px;
+    margin-left: 15px;
+    margin-bottom: 10px;
 
 }
 
@@ -41,8 +41,8 @@
 
 .card-default:hover{
     box-shadow: 3px 2px 3px 3px rgba(0, 0, 0, 0.05);
-    transform: translateY(2deg);
-    transition: all linear 0.3s;
+    transform: translateY(10deg) !important;
+    transition: all linear 0.3s !important;
 }
 
 .img-h{
@@ -56,4 +56,27 @@
     position: absolute;
     left: 20px;
     bottom: 50px !important;
+}
+
+.bg-default{
+    background: white;
+    position: fixed !important;
+    top: 0 !important;
+    width: 100vw !important;
+    z-index: 200 !important;
+    padding: 10px 80px !important;
+}
+
+.m-default{
+    margin-top: 70px !important;
+}
+
+.login-cont{
+    margin: auto;
+}
+
+.login{
+    width: 400px !important;
+    max-width: 400px !important;
+    margin: auto !important;
 }

@@ -1,9 +1,10 @@
 <?php
-class Users extends Table{
+class Users extends Table
+{
 
-    public static function getUser($email){
-
-        return self::fetch("SELECT * FROM users", true);
-
+    public static function getUser($user)
+    {
+        $re = self::prepare("SELECT * FROM users WHERE email = ?", [$user], true);
+        return $re;
     }
 }
