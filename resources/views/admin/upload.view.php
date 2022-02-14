@@ -14,21 +14,21 @@
                     </div>
                     <div class="card-body">
                         <div class="input-group">
-                            <input type="text" class="form-control" name="title" , placeholder="Entrez le titre de l'article" required>
+                            <input type="text" class="form-control" name="title" , placeholder="Entrez le titre de l'article" />
                         </div>
                         <br />
                         <div class="input-group">
-                            <input type="number" class="form-control" name="prix" , placeholder="Entrez le prix de l'article" required>
-                            <input type="number" class="form-control" name="qtt" , placeholder="Entrez la quantitée" required>
+                            <input type="number" class="form-control" name="prix" , placeholder="Entrez le prix de l'article" />
+                            <input type="number" class="form-control" name="qtt" , placeholder="Entrez la quantitée" />
                         </div>
                         <br />
                         <div class="input-group">
-                            <input type="file" class="form-control" name="img" accept="image/png, image/jpg, image/jpeg" required>
+                            <input type="file" class="form-control" name="img" accept="image/png, image/jpg, image/jpeg" />
                         </div>
                         <br />
                         <div class="input-group">
                             <span class="input-group-text">Description de l'article</span>
-                            <textarea class="form-control" name="desc" rows="5" required></textarea>
+                            <textarea class="form-control" name="desc" rows="5"></textarea>
                         </div>
                     </div>
                     <div class="div">

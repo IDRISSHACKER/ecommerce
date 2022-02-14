@@ -3,13 +3,18 @@
 $error = false;
 $errorMsg = "";
 $success = false;
+$location = "";
+
+if (!empty($_GET["redirection"])) {
+    $location = $_GET["redirection"];
+}
 
 class UsersController extends Users
 {
 
     public static function login()
     {
-        global $error, $errorMsg, $success;
+        global $error, $errorMsg, $success, $location;
 
         if (!isset($_SESSION["userId"])) {
             if (isset($_POST["login"])) {
@@ -27,7 +32,11 @@ class UsersController extends Users
 
                         if (password_verify($pass, $dbpass)) {
                             $success = true;
-                            header("Location: index.php");
+                            if (!empty($location)) {
+                                header("Location: index.php?view=article&article=$location");
+                            } else {
+                                header("Location: index.php");
+                            }
 
                             $_SESSION["userId"] =  $userId;
                             $_SESSION["user"]   = $user;

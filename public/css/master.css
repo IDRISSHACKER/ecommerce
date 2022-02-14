@@ -1,3 +1,7 @@
+*{
+    font-family: poppins, sans-serif !important;
+}
+
 .color{
     color: #700aa3 !important;
 }
@@ -7,7 +11,8 @@
 }
 
 .article-title{
-    color: rgba(0, 0, 0, 0.75);
+    color: #121c42;
+    font-weight: 500;
 }
 
 .article-price{
@@ -23,7 +28,6 @@
     background: #9200dd !important;
     color: white;
     margin-left: 15px;
-    margin-bottom: 10px;
 
 }
 
@@ -39,12 +43,6 @@
     margin-bottom: 15px !important;
 }
 
-.card-default:hover{
-    box-shadow: 3px 2px 3px 3px rgba(0, 0, 0, 0.05);
-    transform: translateY(10deg) !important;
-    transition: all linear 0.3s !important;
-}
-
 .img-h{
     height: 200px !important;
     background-size: cover !important;
@@ -55,7 +53,7 @@
 .card-article-price{
     position: absolute;
     left: 20px;
-    bottom: 50px !important;
+    bottom: 20px !important;
 }
 
 .bg-default{
@@ -64,7 +62,7 @@
     top: 0 !important;
     width: 100vw !important;
     z-index: 200 !important;
-    padding: 10px 80px !important;
+    padding: 10px 20px !important;
 }
 
 .m-default{
@@ -79,4 +77,94 @@
     width: 400px !important;
     max-width: 400px !important;
     margin: auto !important;
+}
+
+.oc-shadow{
+    box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px,
+    rgb(0 0 0 / 14%) 0px 1px 1px 0px,
+    rgb(0 0 0 / 12%) 0px 1px 3px 0px !important;
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms !important;
+}
+
+.oc-elevation-0{
+    box-shadow: rgb(0 0 0 / 10%) 0px 1px 1px -2px,
+    rgb(0 0 0 / 14%) 0px 1px 1px 0px,
+    rgb(0 0 0 / 12%) 0px 1px 3px 0px;
+    ;
+}
+
+.oc-elevation-1{
+    box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px,
+    rgb(0 0 0 / 14%) 0px 1px 1px 0px,
+    rgb(0 0 0 / 12%) 0px 1px 3px 0px;
+}
+
+.oc-card-shadow{
+     background-color: rgb(255, 255, 255);
+     color: rgba(0, 0, 0, 0.92);
+     transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+     border-radius: 4px;
+     box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px,
+     rgb(0 0 0 / 14%) 0px 1px 1px 0px,
+     rgb(0 0 0 / 12%) 0px 1px 3px 0px;
+     overflow: hidden;
+}
+
+.oc-card-shadow:hover{
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    box-shadow: rgb(0 0 0 / 20%) 0px 5px 5px -3px,
+    rgb(0 0 0 / 14%) 0px 8px 10px 1px,
+    rgb(0 0 0 / 12%) 0px 3px 14px 2px;
+}
+
+.icon-default{
+    width: 40px !important;
+    height: 40px !important;
+    border-radius:50% !important;
+    opacity: 0.6;
+    transition: all linear 0.3s;
+    background: #ddd;
+    border: solid 2px #4a076c;
+}
+
+.icon-default:hover,
+.icon-simple:hover {
+    opacity: 1;
+    transition: opacity linear 0.2s;
+}
+
+.icon-default .icon {
+    width: 100%;
+    height: 100%;
+}
+
+.icon-simple .icon {
+    width: 100%;
+    height: 100%;
+}
+
+.icon-simple{
+    opacity: 0.6;
+    transition: all linear 0.3s;
+    width: 40px !important;
+    height: 40px !important;
+}
+
+.size-minus{
+ width: 30px !important;
+ height: 30px !important;
+ opacity: 0.8;
+}
+
+.second-menu{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    gap: 15px;
+}
+
+.second-menu a{
+    box-sizing: border-box;
 }

@@ -8,7 +8,7 @@
 return [
 
 	"APP_NAME" 		=> "ecommerce",
-	"APP_URL"       => "http://localhost/ecommerce.php",
+	"APP_URL"       => "http://localhost/ecommerce/public",
 	"APP_AUTHOR"	=> "",
 	"APP_VERSION"   => "1.0.0",
 	"APP_YEAR"      => "2022",
@@ -20,7 +20,7 @@ return [
 	"DB_NAME"       => "ecommerce",
 	"DB_HOST"       => "localhost",
 	"DB_USER"       => "root",
-	"DB_PASS"       => "root",
+	"DB_PASS"       => "",
 
 	"FRAMEWORK"     => [
 		"CSS" => ["bootstrap"],

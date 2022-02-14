@@ -7,6 +7,8 @@ require "./../controllers/Articles.controller.php";
 require "./../app/Users.php";
 require "./../controllers/Users.controller.php";
 
+require "./../controllers/Card.controller.php";
+
 $ROOT = dirname(__DIR__);
 
 $articles = Articles::getArticles();
@@ -39,8 +41,9 @@ if ($view === "home") {
 	require $ROOT . "/resources/views/auth/login.view.php";
 } elseif ($view === "logOut") {
 	UsersController::signOut();
+} elseif ($view === "addCard") {
+	CardController::addCard();
 } else {
-
 	require $ROOT . "/resources/views/home.view.php";
 }
 
