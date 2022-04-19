@@ -11,7 +11,8 @@ class CardController extends Card
         } else {
             if (!empty($_GET["post"])) {
                 $post = $_GET["post"];
-                header("Location: index.php?view=login&redirection=$post");
+                $_SESSION["postRedirection"] = $post;
+                header("Location: index.php?view=login");
             }
         }
     }

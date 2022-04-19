@@ -71,6 +71,8 @@
 
 .login-cont{
     margin: auto;
+    background: "files/icons/login.png" !important;
+    background-position: left;
 }
 
 .login{

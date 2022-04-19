@@ -9,7 +9,7 @@
             <?php } ?>
             <form method="post" action="index.php?view=login">
                 <div class="card">
-                    <div class="card-header">
+                    <div class="card-header text-center">
                         <h4>Se connecter</h4>
                     </div>
                     <div class="card-body">
@@ -24,6 +24,7 @@
                     <div class="div">
                         <button name="login" class="btn btn-default" type="submmit">connexion</button>
                     </div>
+                    <br />
                 </div>
             </form>
         </div>

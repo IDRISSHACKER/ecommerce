@@ -11,7 +11,7 @@
 <noscript>veillez activer le javascript</noscript>
 
 <body class="bg-light">
-  <nav class="navbar navbar-expand-lg navbar-light bg-default oc-shadow">
+  <nav class="navbar navbar-expand-lg navbar-light bg-default">
     <div class="container-fluid">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>

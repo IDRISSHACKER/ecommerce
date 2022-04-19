@@ -32,7 +32,9 @@ class UsersController extends Users
 
                         if (password_verify($pass, $dbpass)) {
                             $success = true;
-                            if (!empty($location)) {
+                            if (!empty($_SESSION["postRedirection"])) {
+                                $location = $_SESSION["postRedirection"];
+                                unset($_SESSION["postRedirection"]);
                                 header("Location: index.php?view=article&article=$location");
                             } else {
                                 header("Location: index.php");
